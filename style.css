@@ -1,0 +1,448 @@
+*{
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+body{
+    background-color: #000000;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+}
+
+/*   Navigation   */
+.navigation{
+    width: 23.5%;
+}
+/*   Top-section   */
+.top-section{
+    margin: 0.2rem;
+    padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background-color: #121212;
+    border-radius: 0.5rem;
+}
+.top-section .spotify{
+    display: flex;
+    font-size: 1rem;
+    font-weight: bold;
+    align-items: center;
+}
+.top-section .home, .search{
+    display: flex;
+    font-size: 1rem;
+    font-weight: bold;
+    align-items: center;
+    gap: 1.25rem;
+    transition: 0.5s;
+}
+.top-section .search{
+    color: rgba(255, 255, 255, 0.591);
+}
+.top-section .search:hover{
+    color: white;
+    fill: rgba(255,255,255,1);
+}
+.top-section .spotify:hover, .home:hover, .search:hover{
+    cursor: pointer;
+}
+/*   Middle-section   */
+.middle-section{
+    margin: 0.2rem;
+    margin-top: 0.5rem;
+    padding-inline: 0.5rem;
+    background-color: #121212;
+    border-radius: 0.5rem;
+    height: 62.75vh;
+}
+.middle-section .toolkit{
+    position: absolute;
+    display: inline;
+    padding: 0.5rem;
+    background-color: #242424;
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+    opacity: 0;
+    z-index: 1;
+}
+.middle-section .lib-toolkit{
+    margin-top: -1.8rem;
+    margin-left: 0.2rem;
+    transition: opacity 0.3s ease;
+}
+.middle-section .close-toolkit{
+    margin-top: -1.8rem;
+    margin-left: 15rem;
+    transition: opacity 0.3s ease;
+}
+.middle-section .top img{
+    height: 1.2rem;
+    width: 1.3rem;
+    opacity: 80%;
+}
+.middle-section .top{
+    display: flex;
+    gap: 1rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.591);
+    position: relative;
+    padding: 1.1rem 1.1rem 1.1rem 0.8rem;
+    box-shadow: 2px 5px 10px #131313;
+}
+.middle-section .top svg{
+    position: absolute;
+    right: 0.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.2rem;
+    transition: 0.4s;
+    transform: translateY(-5px);
+}
+
+.middle-section .top svg:hover{
+    background-color: #282828;
+}
+.middle-section .top .text{
+    transition: 0.4s;
+}
+.middle-section .top .text:hover{
+    cursor: pointer;
+    color: white;
+}
+.middle-section .msg{
+    background-color: #0D72EA;
+    padding: 0.1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 15rem;
+    left: 22.5rem;
+    z-index: 1;
+    width: 20rem;
+    display: none;
+    /* transition: display 0.5s ease; */
+}
+.middle-section .msg p{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.middle-section .msg .btn{
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+}
+.middle-section .msg .btn button{
+    border-radius: 5rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+.middle-section .msg .btn button:hover{
+    transform: scale(1.05);
+}
+.middle-section .bottom .cont1, .cont2{
+    background-color: #242424;
+    padding: 0.1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.middle-section .bottom .cont1 button, .cont2 button{
+    border-radius: 5rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.middle-section .bottom .cont1 button:hover, .cont2 button:hover{
+    transform: scale(1.05);
+}
+.middle-section .bottom .cont1 p, .cont2 p{
+    margin-top: -0.5rem;
+    margin-bottom: 1.2rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.middle-section .bottom{
+    padding-top: 0.5rem;
+    height: 11.5rem;
+    overflow: scroll;
+}
+.middle-section .bottom::-webkit-scrollbar{
+    display: none;;
+}
+.bottom-section{
+    padding: 2rem 0;
+    padding-inline: 1rem;
+}
+.bottom-section .labels{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.bottom-section .labels .part-three span:hover{
+    text-decoration: solid underline rgba(255, 255, 255, 0.591);
+}
+.bottom-section span{
+    cursor: pointer;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.591);
+    margin-right: 1rem;
+}
+
+.bottom-section button{
+    margin-top: 2rem;
+    padding: 0.4rem 0.8rem;
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    border-radius: 5rem;
+    border: 1px solid rgba(255, 255, 255, 0.591);
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+.bottom-section button:hover{
+    transform: scale(1.05);
+    border: 1px solid white;
+}
+
+
+/* footer */
+.footer{
+    position: static;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    margin: 0.3rem;
+    background: linear-gradient(to right, #AF2896, #509AF4);
+    cursor: pointer;
+}
+.footer .cont .line1{
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+}
+.footer .cont .line2{
+    font-size: 0.9rem;
+}
+.footer button{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 0.8rem;
+    margin-top: 0.2rem;
+    border-radius: 5rem;
+    padding: 0.9rem 1.8rem;
+    border: none;
+    cursor: pointer;
+}
+.footer button:hover{
+    transform: scale(1.05);
+}
+
+
+/* Main-section */
+.main_section{
+    background: linear-gradient(#1D1D1D, #121212);
+    width: 75.2vw;
+    height: 87vh;
+    overflow-y: scroll;
+    border-radius: 0.5rem;
+}
+.main_section .navbar{
+    background-color: rgba(0, 0, 0, 0.826);
+    /* background-color: #151515; */
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.main_section .navbar .left, .right{
+    display: flex;
+    gap: 1rem;
+}
+.main_section .navbar .right .signup{
+    background: transparent;
+    color: rgba(255, 255, 255, 0.591);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.main_section .navbar .right .login{
+    border-radius: 5rem;
+    border: none;
+    padding: 0.7rem 2rem;
+    margin: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.main_section .navbar .left svg{
+    border-radius: 50%;
+    background-color: black;
+    cursor: not-allowed;
+}
+.main_section .navbar .right .signup:hover{
+    color: white;
+    transform: scale(1.05);
+}
+.main_section .navbar .right .login:hover{
+    font-weight: 750;
+    transform: scale(1.05);
+}
+.main_section .zzzz, .sleep{
+    padding-inline:1.5rem;
+}
+.main_section .sleep{
+    margin-top: 2rem;
+}
+.main_section .zzzz .top, .sleep .top{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+.main_section .zzzz .top .text, .sleep .top .text{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.main_section .zzzz .top .link a{
+    color: rgba(255, 255, 255, 0.591);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+.main_section .zzzz .top .link a:hover{
+    text-decoration: 1.5px underline;
+}
+.main_section .zzzz .bottom, .sleep .bottom{
+    display: flex;
+    gap: 1.25rem;
+}
+.main_section .zzzz .bottom .card, .sleep .bottom .card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: linear-gradient(#121212, #1c1c1c);
+    border-radius: 0.5rem;
+}
+.main_section .sleep .bottom .card{
+    background: linear-gradient(#1c1c1c, #1c1c1c);
+    width: 12.5rem;
+}
+.main_section .zzzz .bottom .card .img img, .sleep .bottom .card .img img{
+    height: 10.6rem;
+    width: 10.6rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+.main_section .zzzz .bottom .card .content .heading, .sleep .bottom .card .content .heading{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.main_section .zzzz .bottom .card .content .text, .sleep .bottom .card .content .text{
+    color: rgba(255, 255, 255, 0.591);
+    font-size: 0.9rem;
+}
+.main_section .zzzz .bottom .card .play, .sleep .bottom .card .play{
+    border-radius: 50%;
+    background-color: #1FDF64;
+    padding: 0.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1.5rem;
+    top: 9rem;
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease, padding 0.2s ease;
+    transform: scale(1);
+}
+.main_section .zzzz .bottom .card .play:hover, .sleep .bottom .card .play:hover{
+    transform: scale(2);
+    padding: 0.3rem;
+}
+.main_section .zzzz .bottom .card:hover{
+    background: linear-gradient(#2d2c2ca8, #2d2c2ca8);
+    cursor: pointer;
+}
+.main_section .sleep .bottom .card:hover{
+    background: linear-gradient(#2d2c2ca8, #2d2c2ca8);
+    cursor: pointer;
+}
+
+/* Remove upper and bottom buttons from the scrollbar */
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent; /* Color of the scrollbar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #3d3c3c; /* Color of the scrollbar handle */
+}
+
+.main_section .footer_part{
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 2rem 1rem;
+}
+.main_section .footer_part .left{
+    display: flex;
+    gap: 6rem;
+    justify-content: flex-start;
+}
+.main_section .footer_part .left .heading{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.main_section .footer_part .left .list li{
+    list-style: none;
+    margin-bottom: 0.8rem;
+    color: rgba(255, 255, 255, 0.591);
+    cursor: pointer;
+}
+.main_section .footer_part .left .list li:hover{
+    color: white;
+    text-decoration: 1px solid underline;
+}
+.main_section .footer_part .right svg{
+    border-radius: 50%;
+    background-color: #373737;
+    padding: 0.5rem;
+}
+.main_section .footer_part .right svg:hover{
+    background-color: #727272;
+}
+hr{
+    width: 70vw;
+    border: 1px solid #373737;
+}
+.main_section .footer_part2{
+    color: #A7A7A7;
+    margin: 2.5rem 2rem 5rem;
+    font-size: 0.9rem;
+}
+
+body.blur {
+    filter: blur(5px); /* Adjust the blur amount as needed */
+}

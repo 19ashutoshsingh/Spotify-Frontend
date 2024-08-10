@@ -1,0 +1,139 @@
+body{
+    background-color: #121212;
+    color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    font-size: 1.35rem;
+    font-weight: bold;
+    margin: 1.8rem 1.5rem;
+    cursor: default;
+}
+
+.main_section{
+    margin: auto;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.main_section .heading{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.main_section .email{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.main_section .email .label{
+    font-weight: bold;
+}
+.main_section .email input{
+    background: transparent;
+    border: 2px solid #424242;
+    padding: 0.8rem;
+    border-radius: 0.25rem;
+    color: white;
+    font-weight: bold;
+}
+.main_section .email input:hover{
+    border-color: #ffffffb3;
+}
+.main_section .email input::placeholder{
+    color: #A7A7A7;
+}
+.visible{
+    display: none;
+}
+.main_section .email .note{
+    display: flex;
+    gap: 0.2rem;
+    color: #D75561;
+}
+.main_section .phone a{
+    color: #1ED760;
+}
+.main_section .next{
+    background-color: #14cf59;
+    width: 100%;
+    border-radius: 5rem;
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem;
+    cursor: pointer;
+}
+.main_section .next:hover{
+    background-color: #1FDF64;
+}
+.main_section .hr_div{
+    display: flex;
+    gap: 0.8rem;
+}
+.main_section .hr_div hr{
+    width: 45%;
+    border: 2px solid #424242;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.main_section .alters{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+.main_section .alters button{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 0.85rem 1.25rem;
+    color: white;
+    background: transparent;
+    border: 1.7px solid #424242;
+    border-radius: 5rem;
+    font-size: 1.02rem;
+    font-weight: bold;
+    text-align: center;
+}
+.main_section .alters button:hover{
+    border-color: #ffffffb3;
+    cursor: pointer;
+}
+.main_section .footer{
+    padding-inline: 1.5rem;
+}
+.main_section .footer .top{
+    color: #A7A7A7;
+    font-size: 1.05rem;
+    text-align: center;
+}
+.main_section .footer .top a{
+    color: #FFFFFF;
+}
+.main_section .footer .bottom{
+    margin: 1.5rem 0 2rem;
+    font-size: 0.75rem;
+    text-align: center;
+    color: #A7A7A7;
+}
+.main_section .footer .bottom a{
+    color: #A7A7A7;
+}
+.main_section .last_hr{
+    width: 100%;
+    border: 1px solid #292929;
+}
+.login_link{
+    cursor: pointer;
+}
+
+body.blur {
+    filter: blur(5px); /* Adjust the blur amount as needed */
+}

@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+}
+body{
+    background: linear-gradient(#2A2A2A, #000000);
+    color: white;
+}
+
+.logo{
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1.9rem 2.5rem;
+    cursor: default;
+}
+
+.main_section{
+    background: linear-gradient(#121212, #121212);
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    padding: 2rem 5rem;
+    width: 31rem;
+}
+.main_section .first{
+    margin: 2rem 5rem 0.5rem;
+}
+.main_section .heading{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.main_section .alters{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 2rem;
+}
+.main_section .alters button{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 0.85rem 1.25rem;
+    color: white;
+    background: transparent;
+    border: 1.7px solid #424242;
+    border-radius: 5rem;
+    font-size: 1.02rem;
+    font-weight: bold;
+}
+.main_section .alters .phone .text{
+    padding-inline: 1.5rem;
+}
+.main_section .alters button:hover{
+    border-color: #ffffffb3;
+    cursor: pointer;
+}
+.main_section .first_hr, .second_hr{
+    width: 100%;
+    border: 1px solid #292929;
+}
+.main_section .second{
+    margin-top: 2rem;
+    margin-inline: 5rem;
+}
+.email .label{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.main_section .email .username{
+    width: 90%;
+    background: transparent;
+    border: 2px solid #424242;
+    padding: 0.8rem;
+    border-radius: 0.25rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.main_section .email input:hover{
+    border-color: #ffffffb3;
+}
+.main_section .email input::placeholder{
+    color: #A7A7A7;
+}
+.main_section .email .note{
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.2rem;
+    color: #D75561;
+    /* display: none; */
+}
+.main_section .email .visible{
+    display: none;
+}
+.password .label{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.main_section .password input{
+    width: 90%;
+    background: transparent;
+    border: 2px solid #424242;
+    padding: 0.8rem;
+    border-radius: 0.25rem;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+.main_section .password input:hover{
+    border-color: #ffffffb3;
+}
+.main_section .password input::placeholder{
+    color: #A7A7A7;
+}
+.main_section .password .icons, .show, .hide{
+    position: absolute;
+    transform: translate(9.25rem, -1.1rem);
+    cursor: pointer;
+}
+.main_section .password .icons .show{
+    display: none;
+}
+.main_section .password .note{
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.2rem;
+    color: #D75561;
+}
+.main_section .password .visible2{
+    display: none;
+}
+.main_section .toggle{
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    margin: 1rem 0;
+}
+.main_section .toggle .btn{
+    position: relative;
+}
+.main_section .toggle .btn svg{
+    position: absolute;
+    transform: translate(0,-0.9rem);
+    cursor: pointer;
+}
+.main_section .toggle .btn .not_allowed{
+    display: none;
+}
+.main_section .login{
+    background-color: #14cf59;
+    width: calc(100%-2rem);
+    border-radius: 5rem;
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin: 1rem 0;
+}
+.main_section .login:hover{
+    background-color: #1FDF64;
+    transform: scale(1.025);
+}
+.main_section .forget{
+    margin: 1rem 0 2rem;
+    text-align: center;
+}
+.main_section .forget a{
+    color: white;
+}
+.main_section .signup_div{
+    margin: 3rem 5rem;
+    color: #A7A7A7;
+}
+.main_section .signup_div a{
+    color: white;
+}
+
+.footer{
+    background-color: #121212;
+    text-align: center;
+    color: #A7A7A7;
+    padding: 2rem;
+    font-size: 0.8rem;
+}
+.footer a{
+    color: #A7A7A7;
+}
+.signup{
+    cursor: pointer;
+}
+
+body.blur {
+    filter: blur(5px); /* Adjust the blur amount as needed */
+}
